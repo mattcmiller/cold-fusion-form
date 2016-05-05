@@ -1,0 +1,607 @@
+
+body {
+	background: #fff;
+}
+
+.pmg {
+	background: #E7F3F7;
+}
+
+.marketing-overview a, .marketing-overview a:visited {
+	color: #346FA4;
+	font-weight: bold;
+}
+
+.ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  overflow: hidden;
+	display: inline-block;
+
+    float: none !important;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+    padding: 0;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+width: 100%;
+}
+
+.aside-dl {
+	margin: 0;
+	padding: 0;
+}
+
+.aside-dl dd {
+	margin-left: 0;
+	margin-bottom: .5em;
+}
+
+h1, h2,  h3,  h4, h5,
+h2 span.icon,  h1 span.icon,
+.vector span.icon,   h3 span.icon,
+label, .note {
+	color: #004b8e; /* Main Color */
+}
+
+h1 small, h2 small, h3 small {
+	font-size: 1em;
+	text-transform: uppercase;
+
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+small {
+	font-size: 50%;
+}
+
+.labels {
+	border-radius: 3px;
+	padding: 0 6px 6px 12px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+	margin: 3px;
+}
+
+.trello-labels {
+	width: 100%;
+	margin: .25em auto;
+	padding: .5em .5em;
+	font-size: .8em;
+	display: inline-block;
+	border-radius: .25em;
+	color: #fff;
+	text-shadow: 0 0 5px rgba(0,0,0,.2),0 0 2px #000;
+	font-weight: bold;
+	
+}
+
+
+
+.trello-labels.colored {
+	
+}
+
+.unassigned-jobs {
+	background-color: #FFF9D0;
+}
+
+.web-presence{
+	background-color: #B6ECF5;
+}
+
+.production {
+	background-color: #FBB3B3;
+}
+
+.printers {
+	background-color: #FBB3B3;
+}
+
+.proofingroutingtesting-pmg {
+	background-color: #E5C5F7;
+}
+
+.approvals-non-pmg {
+	background-color: #F7EFFF;	
+}
+
+.graphic-design {
+	background-color: #FFDAEE;
+}
+
+.copywriting  {
+	background-color: #CAFBD0;
+}
+
+.abandoned--limbo {
+	background-color: #ddd;
+}
+
+.labels label {
+	color: #eee !important;
+}
+
+.labels.green, .green {
+	background-color: #41c200;
+}
+
+.labels.yellow, .yellow {
+	background-color: #fad900;
+}
+
+.labels.orange, .orange {
+	background-color: #ff9f19;
+}
+
+.labels.red, .red {
+	background-color: #f54747;
+}
+
+.labels.blue, .blue {
+	background-color: #0079bf;
+}
+
+.labels.sky, .sky {
+	background-color: #00c2e0;
+}
+
+.labels.purple, .purple {
+	background-color: #a632db;
+}
+
+.labels.lime, .lime {
+	background-color: #45e660;
+}
+
+.labels.pink, .pink {
+	background-color: #ff78cb;
+}
+
+.labels.black, .black  {
+	background-color: #4d4d4d;
+}
+.labels.undefined, .labels.null {
+	background-color: #999;
+}
+
+.labels.undefined,
+.lists {
+	display: none;
+}
+
+.required {
+	color: #dc3659;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.pmg .jumbotron {
+	background: #fff;
+}
+
+.pmg .well {
+	background-color: #D0EEF5;
+}
+
+.reciept dt, .reciept dd {
+	margin-bottom: .5em;
+}
+
+
+
+/* 2.3 Navigation */
+
+.dropdown-menu {
+	background-image: none;
+}
+
+.navbar-toggle {
+	border-color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+
+	background-color: #fff;
+}
+
+.navbar-nav>li>a, .navbar-nav>li, .navbar-text  {
+	color: #fff;
+}
+
+.navbar-nav>li>a {
+	padding: 23px 10px;
+}
+
+.navbar-text {
+	margin: 20px 0;
+	padding: 0 10px;
+}
+
+ .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+	background: rgba(255,255,255,.3) !important;
+}
+
+/* 2.3.1 Drop-down menus */
+
+
+.navbar-nav>.dropdown>a .caret {
+	border-top-color: white;
+	border-bottom-color: white;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+color: #fff;
+background-color: rgba(255,255,255, .30);
+}
+
+.navbar-nav>.active>a, 
+.navbar-nav>.active>a:hover, 
+.navbar-nav>.active>a:focus {
+color: #fff;
+background-color: rgba(255,255,255, .15);
+}
+
+
+/* Bootstrap Fixes */
+
+.form-group input, .form-group select {
+	width: 99%;
+	border: 1px solid #ccc;
+	padding: .1em .3em;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+	width: auto;
+}
+
+.row img {
+	 max-width: 100%;
+}
+
+.list-inline {
+	margin-left: 0;
+}
+
+.btn {
+	white-space: pre-line;
+}
+
+.jumbotron {
+color: #004b8e;
+padding: 30px !important;
+margin-bottom: 2em !important;
+background-color: #ebf2f9;
+border-radius: 10px;
+}
+
+.help-block {
+	font-size: 85%;
+}
+
+ .form-horizontal .form-group .alert.form-group {
+	margin: .5em 0;
+	width: 99%;
+	padding: 7px;
+}
+
+
+.btn-xs {
+	font-size: .8em;
+	padding: .12em .25em;
+	margin: 0;
+}
+
+.radio label, . {
+	color: #000;
+	font-size: 85%;
+}
+
+.checkbox label.checkbox-inline {
+	padding-left: 3px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-color: #004b8e;
+  border-width: 5px 5px 0;
+}
+.tooltip-inner {
+  color: #004b8e;
+  background: #fff;
+  border: solid 2px #004b8e;
+width: 100%;
+}
+
+.tooltip.left .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #004b8e;
+}
+.tooltip.bottom .tooltip-arrow{
+    top:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid #004b8e;
+}
+.tooltip.right .tooltip-arrow{
+    top:50%;
+    left:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-right:5px solid #004b8e;
+}
+
+
+/* 1.2 Hyperlinks  */
+
+ a,  a:visited {
+	color: #00aec5; /* Action Color */
+	text-decoration:none;
+}
+
+ a:hover, a:focus {
+	color: #1AC8DF; /* 10% Lighter Action Color */
+	text-decoration:underline;
+}
+
+ a:active,  a.btn-default,  button.btn-default, .btn-primary  {
+	color: #0095AC; /* 10% Darker Action Color */
+}
+
+
+a.btn-inverse, button.btn-inverse, 
+a.btn-primary, button.btn-primary,
+.btn {
+	color: #fefefe !important;
+}
+
+a.btn-inverse:hover, button.btn-inverse:hover,
+a.btn-primary:hover, button.btn-primary:hover,
+a.btn-primary:focus, button.btn-primary:focus {
+	color: #fff !important;
+}
+
+a.btn-inverse:active,  button.btn-inverse:active,
+a.btn-primary:active, button.btn-primary:active {
+	color: #ebebeb !important;
+}
+
+a.btn-primary, button, .btn-primary   {
+	background: #00aec5; /* Action Color */
+	border-color: #0095AC; /* 10% Darker Action Color */
+}
+
+ a.btn-primary:hover,  button:hover, .btn-primary:hover,
+.btn-primary:focus, button:focus, a.btn:focus {
+	background: #1AC8DF; /* 10% Lighter Action Color */
+	border-color: #00aec5;  /* Action Color */
+}
+
+ a.btn-primary:active,  button:active, .btn-primary:active     {
+	background: #0095AC; /* 10% Darker Action Color */
+	border-color: #00aec5;  /* Action Color */
+}
+
+a.btn-default,  button.btn-default {
+	background: #fff !important;
+	color: #00aec5 !important; /* Action Color */
+}
+
+a.btn-default:hover,  button.btn-default:hover,
+a.btn-default:focus,  button.btn-default:focus {
+	background: #EBEBEB !important;
+	color: #0DBBD2 !important; /* 20% Darkened Action */
+}
+
+a.btn-default:active,  button.btn-default:active {
+	background: #eee !important;
+	color: #0095AC !important; /* 10% Darker Action Color */
+}
+
+
+.icon {
+	vertical-align: -.125em;
+	font-size: 95%;
+}
+
+/* 2.1 Containers & Columns */
+
+.wrap {
+	width: 100%;
+}
+
+.row {
+	margin: 0 auto;
+}
+
+.row-spacer {
+	margin: .75em auto;
+}
+
+.well h1, .well h2, .well h3, .well h4, .well h5 {
+	margin-top: 0;
+}
+
+#header-trello {
+	border-bottom: 2px solid #004b8e;
+	padding-bottom: .25em;
+	margin-bottom: .5em;
+}
+
+/* 2.2 Header */
+
+.navbar {
+	background: #004b8e;
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+
+.disabled, .btn-primary.disabled, .btn-primary[disabled], 
+fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, 
+.btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, 
+.btn-primary.disabled:focus, .btn-primary[disabled]:focus, 
+fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, 
+.btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, 
+.btn-primary.disabled.active, .btn-primary[disabled].active, 
+fieldset[disabled] .btn-primary.active {
+	background: #eee;
+	color: #bbb !important;
+	border: #ccc 1px solid !important;
+}
+
+
+
+.additional-question, .print {
+	display: none;
+}
+
+.aside-list li {
+	border-bottom: rgba(255,255,255,.5) 2px solid;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+}
+
+.aside-list li:last-child {
+	border-bottom: none;
+}
+
+
+#loggedout a {
+    font-weight: 300 !important;
+	width: auto;
+	margin: 0 auto;
+}
+#loggedin { 
+    display: none; 
+}
+
+
+
+@media screen and (min-width: 1001px) {
+	.wrap {
+		width: 1000px;
+		margin: 0 auto;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.jumbotron {
+	padding-top: 48px !important;
+	padding-bottom: 48px !important;
+	}
+	
+	.row div.project {
+		padding-right: 0;
+		padding-left: 30px;
+	}
+
+	.reciept dt {
+		width: 30%;
+	}
+
+	.reciept dd {
+		margin-left: 33%;
+	}
+}
+
+@media screen and (max-width:768px) {
+
+	header .pull-right {
+		float: none !important;
+		clear:both;
+	}
+	
+	.navbar-brand {
+		margin: 0 auto;
+	}
+	
+	
+	.navbar-collapse .nav {
+		background: rgba(255,255,255,.1);
+		margin: 0 -15px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+	}
+	
+	.nav.navbar-right {
+		background: none;
+	}
+	
+	.navbar-nav>li>a,
+	 .navbar-nav p {
+		padding: 15px 30px;
+	}
+	
+	.navbar-nav .open .dropdown-menu,
+	.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+		background: rgba(255,255,255,.3);
+	}
+	
+	.navbar-nav .open .dropdown-menu>li>a {
+		padding: 15px 45px;
+		color: white;
+	}
+	
+	.navbar-nav .open .dropdown-menu>li>a:hover,
+	.navbar-nav .open .dropdown-menu>li>a:focus {
+			background: rgba(255,255,255,.45);
+	}
+}
+
+@media screen and (min-width: 640px) {
+
+	.navbar-text {
+		border-left: 2px solid #fff;
+	}
+	
+	.labels.col-sm-4 {
+		width: 32.33333333%;
+		margin: .5%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.labels.col-xs-6 {
+		width: 47%;
+		margin: 1%;
+	}
+
+
+	.navbar-text {
+		display: none;
+	}
+}
+
+/*--------------- IE 10 & 11  -------------------*/
+
+/* IE 10 html[data-useragent*='MSIE 10.0'] */
+
+ html[data-useragent*='MSIE 10.0'] .chromeframe,
+ html[data-useragent*='MSIE 11.0'] .chromeframe,
+html[data-useragent*='Trident/6.0'] .chromeframe,
+html[data-useragent*='Trident/7.0'] .chromeframe {
+	display: none;
+}
