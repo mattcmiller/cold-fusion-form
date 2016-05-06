@@ -1,6 +1,6 @@
 
 <cfinclude template="includes/header.cfm">
-	
+
 <cfif url.pm NEQ ''>
 	<cfset session.pm = 1>
 </cfif>
@@ -8,7 +8,7 @@
 <cfif url.iframe NEQ ''>
 	<cfset session.iframe = 1>
 </cfif>
-	
+
 
 <cfquery name="pmgCompanies" datasource="Pearl_Internal_Web">
 SELECT *
@@ -20,21 +20,21 @@ ORDER BY title ASC
 <cfquery name="pmgAffinity" datasource="Pearl_Internal_Web">
 SELECT *
 FROM dbo.PMGjobRequestCompanyList
-WHERE title = 'Pearl Affinity' AND subTitle IS NOT NULL 
+WHERE title = 'Pearl Affinity' AND subTitle IS NOT NULL
 ORDER BY subTitle ASC
 </cfquery>
 
 <cfquery name="pmgBusiness" datasource="Pearl_Internal_Web">
 SELECT *
 FROM dbo.PMGjobRequestCompanyList
-WHERE title = 'Pearl Business Insurance' AND subTitle IS NOT NULL 
+WHERE title = 'Pearl Business Insurance' AND subTitle IS NOT NULL
 ORDER BY subTitle ASC
 </cfquery>
 
 <cfquery name="pmgAuto" datasource="Pearl_Internal_Web">
 SELECT *
 FROM dbo.PMGjobRequestCompanyList
-WHERE title = 'Pearl Automotive' AND subTitle IS NOT NULL 
+WHERE title = 'Pearl Automotive' AND subTitle IS NOT NULL
 ORDER BY subTitle ASC
 </cfquery>
 
@@ -45,24 +45,23 @@ WHERE status = 'A' AND company <> 'automot' AND managerSupervisor = '1'
 ORDER BY lastName ASC
 </cfquery>
 
-<cfset session.progress = "25">	
-	
+<cfset session.progress = "25">
+
  <!---INCLUDE BODY TOP HTML--->
 <cfinclude template="includes/bodyTop.cfm">
-	
+
 	<div class="row">
-	<div class="col-sm-12 col-xs-12">    
-		
+	<div class="col-sm-12 col-xs-12">
+
 		<cfinclude template="includes/step-01.cfm">
 
     </div><!--/span-->
-  
+
 </div><!--/row-->
 
-     
-	
-	
-	<!---INCLUDE FOOTER INCLUDE--->
+
+
+
 	<cfinclude template="includes/footer.cfm">
 
   </body>
@@ -81,7 +80,7 @@ YYNNNN  year two digits and then increment job number up to four digits--->
 
 
 	$( document ).ready(function() {
-				
+
 	$(function () {
 		$('input[type="datetime"]').datetimepicker({
 			pickTime: false,
@@ -92,13 +91,13 @@ YYNNNN  year two digits and then increment job number up to four digits--->
 	});
 	$("[required]" ).parent().parent().find(".control-label").append("<i class='icon-asterisk'>*</i> ");
 	$("[required]").parent().parent().find(".control-label").addClass("required");
-	
+
 	$("input[name=optionsRadios]").parent().parent().parent().parent().find(".control-label").append("<i class='icon-asterisk'>*</i> ");
 	$("input[name=optionsRadios]").parent().parent().parent().parent().find(".control-label").addClass("required");
 
 	$("input[name=managerApproval]").parent().parent().parent().parent().find(".control-label").append("<i class='icon-asterisk'>*</i> ");
 	$("input[name=managerApproval]").parent().parent().parent().parent().find(".control-label").addClass("required");
-	
+
 	$('select[name="companyOptions"]').change(function(){
 		var str = "";
 		    $( "select[name='companyOptions'] option:selected" ).each(function() {
@@ -112,7 +111,7 @@ YYNNNN  year two digits and then increment job number up to four digits--->
 				$('.affinity-select').hide();
 				$('#inputClient').prop('required',false);
 			}
-			
+
 			if ( str == "5") {
 				$('.business-select').show();
 				$('#inputBusiness').prop('required',true);
@@ -121,8 +120,8 @@ YYNNNN  year two digits and then increment job number up to four digits--->
 				$('.business-select').hide();
 				$('#inputBusiness').prop('required',false);
 			}
-			
-			
+
+
 			if ( str == "2") {
 				$('.auto-select').show();
 				$('#inputAuto').prop('required',true);
@@ -132,10 +131,10 @@ YYNNNN  year two digits and then increment job number up to four digits--->
 				$('#inputAuto').prop('required',false);
 			}
 		    });
-		
-		
+
+
 	});
-	
+
 	/*
 	$('.trigger').click(function() {
       $('.additional-question').hide();
@@ -150,27 +149,27 @@ YYNNNN  year two digits and then increment job number up to four digits--->
 	        $(".job-number").show();
 			$(".point-person-bool").show();
 	    }
-	
+
 	    if (this.id == "newFalse") {
 	        $(".job-number").hide();
 			$(".point-person-bool").hide();
 	    }
 
 	});
-	
-	
+
+
 	$('input[name=managerApproval]').click(function () {
 	    if (this.id == "approved") {
 	        $(".manager").hide();
 	    }
-	
+
 	    if (this.id == "notApproved") {
 	        $(".manager").show();
 	    }
 
 	});
-	
-	
+
+
 	$('input[name=pmgOptions]').click(function () {
 	    if (this.id == "pastTrue") {
 			$(".pmg-point").show();
@@ -179,25 +178,25 @@ YYNNNN  year two digits and then increment job number up to four digits--->
 			$(".pmg-point").hide();
 	    }
 	});
-	
-	
+
+
 	$('.trigger').click(function () {
 		$('.subquestion').hide();
-		
+
 	   	if (this.id == "newRadio") {
 			$(".based-on-bool").show();
 	    }
 		else {
 			$(".based-on-bool").hide();
 		}
-		
+
 		if (this.id == "revisionRadio") {
 			$(".job-number").show();
 	    }
 		else {
 			$(".job-number").hide();
 		}
-		
+
 		if (this.id == "unknownRadio") {
 			$(".point-person-bool").show();
 	    }
@@ -206,14 +205,14 @@ YYNNNN  year two digits and then increment job number up to four digits--->
 		}
 
 	});
-	
 
-	
+
+
 
 	$('[data-toggle="tooltip"]').tooltip();
 	$('[data-toggle="popover"]').popover();
-	
+
 	});
 
-	
+
 </script>
