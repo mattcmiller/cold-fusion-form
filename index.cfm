@@ -70,7 +70,7 @@ ORDER BY lastName ASC
 
 <!---reset number at 1st of year
 
-YYNNNN  year two digits and then increment job number up to four digits--->
+YYNNNN  year two digits and increment job number up to four digits--->
 
 <script src="../bootstrap3/js/bootstrap.min.js"></script>
 <script src="../bootstrap3/js/moment.js"></script>
